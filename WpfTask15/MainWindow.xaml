@@ -1,0 +1,166 @@
+﻿<Window x:Class="WpfTask15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTask15"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentScrollViewer x:Name="docVierwer">
+            <FlowDocument>
+                <Paragraph FontSize="24" FontWeight="Bold" Margin="100,0,0,0" Foreground="#FF6C1AFB">
+                    <Paragraph.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="White" Offset="0"/>
+                            <GradientStop Color="#FFD6F128" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Paragraph.Background>
+                    История татуировок
+                </Paragraph>
+                <Paragraph>
+                    <Floater Width="150" HorizontalAlignment="Left">
+                        <BlockUIContainer>
+                            <Image Source="Data/Taty.jpg"/>
+                        </BlockUIContainer>
+                    </Floater>
+                </Paragraph>
+                <Paragraph>
+                    <Span>
+                        <Span.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFF7F7FB" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Span.Background>
+                        <Underline>
+                            <Italic>Татуирóвка — процесс нанесения перманентного (стойкого, постоянного) рисунка на тело, выполняемого методом местного травмирования кожного покрова с внесением в дерму красящего пигмента; сами узоры на теле, сделанные таким способом.</Italic>
+                        </Underline>
+                    </Span>
+                </Paragraph>
+
+                <Paragraph FontSize="14" FontWeight="Bold" Margin="20,0,0,0">
+                    ЦЕЛИ, ПРИЧИНЫ, ЗНАКИ
+                </Paragraph>
+                <Paragraph FontSize="12">
+                    Есть две версии исторического возникновения татуировок.Шрамы на теле воинов 
+Постоянные конфликты с соседними племенами, схватки с дикими зверями на охоте нередко заканчивались ранениями охотников. Затянувшиеся шрамы делали их тела более привлекательными и мужественными в глазах женских особей и остальной родни. Мода существовала во все времена: на смену шрамам пришло тату, искусственное украшение тела.
+Знак приоритета. В первобытном коллективе для выделения лидеров, значимых людей потребовались знаки отличия, для чего и пригодилась татуировка..
+Позднее в разных народах существовали и другие причины нанесения тату. Расскажем о наиболее популярных.
+Переходный возраст. При достижении определенного возраста юношам в некоторых племенах делали отметку в виде рисунка тату о его посвящении в мужчины. Девушек отмечали подобным способом после первых месячных.
+Вид терапии. Для профилактики заболеваний, а также для лечения (как в случае с ледяным человеком Эци), наносились специальные символы, которые препятствовали попаданию хвори в организм и изгоняли болячки.
+Косметические цели. Женщинам из племени майори делали тату по контуру губ. За отсутствием макияжа считалось, что такой метод надолго сохранит ее привлекательность.
+Татуировка – оберег. В разных регионах считалось, что изображение или определенный символ защитит его владельца от происков темных сил, духов и прочей нечисти.
+Тату покровительница. В некоторых языческих племенах покровителями людей являлись живые существа: птицы или животные. Изображение, к примеру, медведя или орла спасало племя, по их мнению, от бед, помогало в работе.             
+                </Paragraph>
+                <Paragraph FontSize="14" FontWeight="Bold">
+                    Таблица. Стили татуировок
+                </Paragraph>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn Width="0.5*"/>
+                        <TableColumn Width="1.5*"/>
+                        <TableColumn Width="2*"/>
+                        <TableColumn Width="*"/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    № 
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Дата появления
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Наименование стиля
+                                </Paragraph>
+                            </TableCell>
+                            
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    1
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    1891 г.
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Традиционный
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    2
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    20-й век
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Акварель
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    3
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                 90-е г. 20 в.   
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                 Новая школа  
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+                <Paragraph FontSize="8">
+                    Ссылка на источники:
+                    <Hyperlink>
+                        https://tattoo-kmv.com/about/istoriya-tatu
+                    </Hyperlink>
+                    <Hyperlink>
+                        https://tatooha.ru/19-populyarnyh-stilej-tatuirovki/
+                    </Hyperlink>
+                </Paragraph>
+                <BlockUIContainer>
+                    <StackPanel>
+                        <TextBlock Text="Хочешь татуировку??? Нажми ДА!!!"/>
+                        <Button Content="ДА !!!" FontSize="20">
+                            <Button.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFCB57A6" Offset="0"/>
+                                    <GradientStop Color="White" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </BlockUIContainer>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Window>
